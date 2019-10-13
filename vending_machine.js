@@ -16,27 +16,25 @@ function Payment(){
 
     // getting the user Selection (id name  of html) of the form.
     selection = document.getElementById("selection").value
-   
-
-
             // getting value of this key.
         var dis = Machine[selection]
         // getting -0 element
         var name= dis[0].toString()
         //getting 1 element. cost and having 2 decimal places
             var cost = dis[1].toFixed(2)
-
-
             //displaying an alerrt
             alert("you selected a " +name)
             alert("your payment is: $" + cost )
-        
-
     alert("PAYMENT WAS RECEIVED")
-   
-
-    
-
 
 }
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
 
