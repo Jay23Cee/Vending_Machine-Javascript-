@@ -3,11 +3,13 @@
 <title>Vending Machine</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" type = "text/css" href = "/css/style.css" />
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
-.w3-bar-block .w3-bar-item {padding:20px}
+
 </style>
 <body>
 
@@ -32,29 +34,31 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
 
   <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+  <div class="w3-row-padding w3-padding-16 w3-center" id="drinks">
     <div class="w3-quarter">
-      <a href="">
-      <img src="images/coke.jpg" alt="Coke" style="width:100%"></a>
+      <button id="1" onClick="Payment(this.id)" value=1 >
+      <img src="images/coke.jpg" alt="Coke" style="width:100%"></button>
       <h3>Classic Coca Cola</h3>
       <p>"Open Happiness"</p>
     </div>
     <div class="w3-quarter">
-      <a href="">
-      <img src="images/fanta.jpg" alt="Orange_Fanta" style="width:100%"></a>
+      <button id="2" onClick="Payment(this.id)" value=2 >
+      <img src="images/fanta.jpg" alt="Orange_Fanta" style="width:100%"></button>
       <h3>Orange Fanta</h3>
       <p>"Wanta Fanta! "</p>
     </div>
     <div class="w3-quarter">
-        <a href="">
-      <img src="images/seven_up.jpg" alt="7up" style="width:100%"></a>
+      
+    <button id="3" onClick="Payment(this.id)" value=3 >
+      <a href="https://www.yahoo.com">
+      <img src="images/seven_up.jpg" alt="7up" style="width:100%"></button></a>
       <h3>7up</h3>
       <p>"Do More With 7UP" </p>
      
     </div>
     <div class="w3-quarter">
-      <a href="">
-      <img src="images/water.jpg" alt="Water" onclick="w3_open()" style="width:100%">  </a>
+        <button id="4" onClick="Payment(this.id)" value=4 >
+      <img src="images/water.jpg" alt="Water"  style="width:100%">  </button>
       <h3>Water</h3>
       <p> "A drop of water is worth more than a sack of gold to a thirsty man.”</p>
     </div>
