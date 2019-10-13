@@ -2,7 +2,7 @@
 // VENDING MACHINE SELECTION
 var Machine= {1:["coke", 2.60], 2:["Orange Fanta", 2.60], 3:["7up", 2.75], 4:["Water", 1.50]}
 
-
+  
 //When user Click on an option. This functino is  activated
 function Payment(clicked_id){
    
@@ -17,6 +17,8 @@ function Payment(clicked_id){
             //displaying an alerrt
             alert("you selected a " +name)
             alert("your payment is: $" + cost )
+
+            //
     
 
 }
