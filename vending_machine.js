@@ -1,21 +1,13 @@
-// Need to be worked on more. 
-// Needs to display the menu to html.
 
-
-
-var menu_html = document.getElementsByName("menu")
-var machine = []; // create an empty array
+// VENDING MACHINE SELECTION
 var Machine= {1:["coke", 2.60], 2:["Orange Fanta", 2.60], 3:["7up", 2.75], 4:["Water", 1.50]}
-machine[1]= ["coke", 2.60]
-machine[2]= ["Orange Fanta", 2.60],
-machine[3]= [ "7up", 2.75 ],
-machine[5]= [ 'water',  1.50 ]
 
 
-function Payment(){
-
+//When user Click on an option. This functino is  activated
+function Payment(clicked_id){
+   
     // getting the user Selection (id name  of html) of the form.
-    selection = document.getElementById("selection").value
+    selection = document.getElementById(clicked_id).value
             // getting value of this key.
         var dis = Machine[selection]
         // getting -0 element
@@ -25,7 +17,7 @@ function Payment(){
             //displaying an alerrt
             alert("you selected a " +name)
             alert("your payment is: $" + cost )
-    alert("PAYMENT WAS RECEIVED")
+    
 
 }
 
