@@ -9,11 +9,11 @@ function Payment(clicked_id){
     // getting the user Selection (id name  of html) of the form.
     selection = document.getElementById(clicked_id).value
             // getting value of this key.
-        var dis = Machine[selection]
+        var drink_option = Machine[selection]
         // getting -0 element
-        var name= dis[0].toString()
+        var name= drink_option[0].toString()
         //getting 1 element. cost and having 2 decimal places
-            var cost = dis[1].toFixed(2)
+            var cost = drink_option[1].toFixed(2)
             //displaying an alerrt
             alert("you selected a " +name)
             alert("your payment is: $" + cost )
